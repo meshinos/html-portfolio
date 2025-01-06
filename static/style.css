@@ -150,7 +150,7 @@ h4 {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body {
     font-size: 14px; /* Adjust the base font size */
   }
