@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./static/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="contact-section">
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=meshinos97@gmail.com"
-          target="_blank"
-          class="contact-link"
-          >Contact Me</a
-        >
-        <a href="./static/Meshi_Nosrati_CV.pdf" class="cv-button" download
-          >My Resume</a
-        >
-      </div>
-      <section class="hero">
+      <nav class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#who-am-i-section">About Me</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=meshinos97@gmail.com"
+            target="_blank"
+            >Contact Me</a
+          >
+        </li>
+        <li>
+          <a href="./static/Meshi_Nosrati_CV.pdf" download>Resume</a>
+        </li>
+      </ul>
+    </nav>
+      <section id="hero-section" class="hero">
         <div class="hero-content">
           <h1>Hello, World! It’s Me, Meshi.</h1>
           <h3>
@@ -33,7 +44,7 @@
         </div>
       </section>
       <section>
-        <div class="who-am-i-section">
+        <div id="who-am-i-section" class="who-am-i-section">
           <div class="profile-section">
             <img
               src="./static/profile.jpeg"
@@ -54,7 +65,7 @@
           </p>
         </div>
       </section>
-      <section class="skills-section">
+      <section id="skills-section" class="skills-section">
         <h2>My Journey & Skills</h2>
         <div class="skills-content">
           <div class="skill">

@@ -1,14 +1,49 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: rgb(163, 78, 94);
-  background: linear-gradient(
-    351deg,
-    rgba(163, 78, 94, 1) 35%,
-    rgba(232, 203, 192, 1) 100%
-  );
+
+  background: linear-gradient(135deg, #ece7e1 25%, #f1d5bf 75%);
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #eee2d2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5a5a5a;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #8b5e3c; /* Brownish highlight */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -17,7 +52,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 80px;
-  color: white;
   text-align: center;
   z-index: 1; /* Ensure it's above the background */
 }
@@ -26,14 +60,13 @@ body {
 .hero-content h1 {
   font-size: 3rem; /* Large, bold text */
   font-weight: 900;
-  margin: 90px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 h2,
 h3,
 h4 {
   font-weight: bold;
-  color: #a34e5e;
   text-align: center;
   font-size: 2rem;
 }
@@ -114,7 +147,6 @@ h4 {
 }
 
 .skills-section h2 {
-  color: white;
   margin-bottom: 30px;
 }
 
@@ -133,7 +165,6 @@ h4 {
 
 .skill h3 {
   font-size: 1.5rem;
-  color: #a05d5d;
   margin-bottom: 10px;
 }
 
