@@ -63,6 +63,22 @@ html {
   margin: 50px 0 0 0;
 }
 
+.hero-content h1,
+.hero-content h3 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h2,
 h3,
 h4 {
@@ -105,8 +121,7 @@ h4 {
 }
 
 .who-am-i-section {
-  background: white;
-
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   margin-top: 0; /* Remove unnecessary margin */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -157,10 +172,10 @@ h4 {
 }
 
 .skill {
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .skill h3 {
